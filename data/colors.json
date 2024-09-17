@@ -875,10 +875,6 @@
       }
     },
     "bg": {
-      "base": {
-        "$type": "color",
-        "$value": "{gray.5}"
-      },
       "default": {
         "$type": "color",
         "$value": "{gray.0}"
@@ -891,23 +887,27 @@
         "$type": "color",
         "$value": "{gray.0}"
       },
+      "inverse": {
+        "$type": "color",
+        "$value": "{gray.95}"
+      },
       "defaultAlpha": {
         "$type": "color",
         "$value": "{alpha.black.3}",
         "$description": "rgba(gray/50, 0.05)"
       },
-      "inverse": {
-        "$type": "color",
-        "$value": "{gray.95}"
-      },
-      "subtle": {
-        "$type": "color",
-        "$value": "{gray.10}"
-      },
-      "subtleAlpha": {
+      "emphasisAlpha": {
         "$type": "color",
         "$value": "{alpha.black.5}",
         "$description": "rgba(gray/80, 0.1)"
+      },
+      "base": {
+        "$type": "color",
+        "$value": "{gray.10}"
+      },
+      "ground": {
+        "$type": "color",
+        "$value": "{gray.5}"
       },
       "info": {
         "$type": "color",
@@ -947,19 +947,31 @@
         "$type": "color",
         "$value": "{gray.10}"
       },
+      "emphasis": {
+        "$type": "color",
+        "$value": "{gray.20}"
+      },
       "defaultAlpha": {
         "$type": "color",
         "$value": "{alpha.black.10}"
       },
-      "subtle": {
-        "$type": "color",
-        "$value": "{gray.20}"
-      },
-      "subtleAlpha": {
+      "emphasisAlpha": {
         "$type": "color",
         "$value": "{alpha.black.20}"
       },
       "muted": {
+        "$type": "color",
+        "$value": "{gray.5}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{gray.90}"
+      },
+      "onInverse": {
+        "$type": "color",
+        "$value": "{gray.40}"
+      },
+      "onInverseSubtle": {
         "$type": "color",
         "$value": "{gray.5}"
       },
@@ -994,18 +1006,6 @@
       "dangerEmphasis": {
         "$type": "color",
         "$value": "{red.40}"
-      },
-      "inverse": {
-        "$type": "color",
-        "$value": "{gray.90}"
-      },
-      "onEmphasis": {
-        "$type": "color",
-        "$value": "{gray.40}"
-      },
-      "onEmphasisSubtle": {
-        "$type": "color",
-        "$value": "{gray.5}"
       }
     },
     "dim": {
@@ -1185,6 +1185,36 @@
           "$value": 4
         }
       }
+    },
+    "outline": {
+      "default": {
+        "$type": "color",
+        "$value": "{gray.5}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{blue.10}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{green.10}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{orange.10}"
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{red.10}"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{blue.10}"
+      },
+      "width": {
+        "$type": "number",
+        "$value": 4
+      }
     }
   },
   "Colors/Dark": {
@@ -1257,10 +1287,6 @@
       }
     },
     "bg": {
-      "base": {
-        "$type": "color",
-        "$value": "{gray.100}"
-      },
       "default": {
         "$type": "color",
         "$value": "{gray.95}"
@@ -1273,23 +1299,27 @@
         "$type": "color",
         "$value": "{gray.85}"
       },
+      "inverse": {
+        "$type": "color",
+        "$value": "{gray.0}"
+      },
       "defaultAlpha": {
         "$type": "color",
         "$value": "{alpha.white.3}",
         "$description": "rgba(gray/50, 0.05)"
       },
-      "inverse": {
-        "$type": "color",
-        "$value": "{gray.0}"
-      },
-      "subtle": {
-        "$type": "color",
-        "$value": "{gray.90}"
-      },
-      "subtleAlpha": {
+      "emphasisAlpha": {
         "$type": "color",
         "$value": "{alpha.white.5}",
         "$description": "rgba(gray/80, 0.1)"
+      },
+      "ground": {
+        "$type": "color",
+        "$value": "{gray.100}"
+      },
+      "base": {
+        "$type": "color",
+        "$value": "{gray.90}"
       },
       "info": {
         "$type": "color",
@@ -1329,21 +1359,33 @@
         "$type": "color",
         "$value": "{gray.90}"
       },
+      "emphasis": {
+        "$type": "color",
+        "$value": "{gray.80}"
+      },
       "defaultAlpha": {
         "$type": "color",
         "$value": "{alpha.white.5}"
       },
-      "subtle": {
-        "$type": "color",
-        "$value": "{gray.80}"
-      },
-      "subtleAlpha": {
+      "emphasisAlpha": {
         "$type": "color",
         "$value": "{alpha.white.10}"
       },
       "muted": {
         "$type": "color",
         "$value": "{gray.85}"
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{gray.10}"
+      },
+      "onInverse": {
+        "$type": "color",
+        "$value": "{gray.40}"
+      },
+      "onInverseSubtle": {
+        "$type": "color",
+        "$value": "{gray.5}"
       },
       "info": {
         "$type": "color",
@@ -1376,18 +1418,6 @@
       "dangerEmphasis": {
         "$type": "color",
         "$value": "{red.30}"
-      },
-      "inverse": {
-        "$type": "color",
-        "$value": "{gray.10}"
-      },
-      "onEmphasis": {
-        "$type": "color",
-        "$value": "{gray.40}"
-      },
-      "onEmphasisSubtle": {
-        "$type": "color",
-        "$value": "{gray.5}"
       }
     },
     "dim": {
@@ -1421,26 +1451,10 @@
       }
     },
     "shadow": {
-      "preset1": {
-        "$type": "color",
-        "$value": "{gray.100}"
-      },
-      "preset2": {
-        "$type": "color",
-        "$value": "{gray.100}"
-      },
-      "preset1OnEmphasis": {
-        "$type": "color",
-        "$value": "{alpha.black.30}"
-      },
-      "preset2OnEmphasis": {
-        "$type": "color",
-        "$value": "{alpha.black.20}"
-      },
       "sm": {
         "color": {
           "$type": "color",
-          "$value": "{alpha.black.70}"
+          "$value": "{alpha.black.50}"
         },
         "colorOnEmphasis": {
           "$type": "color",
@@ -1466,7 +1480,7 @@
       "md": {
         "color": {
           "$type": "color",
-          "$value": "{alpha.black.60}"
+          "$value": "{alpha.black.40}"
         },
         "colorOnEmphasis": {
           "$type": "color",
@@ -1492,7 +1506,7 @@
       "lg": {
         "color": {
           "$type": "color",
-          "$value": "{alpha.black.60}"
+          "$value": "{alpha.black.40}"
         },
         "colorOnEmphasis": {
           "$type": "color",
@@ -1518,7 +1532,7 @@
       "xl": {
         "color": {
           "$type": "color",
-          "$value": "{alpha.black.60}"
+          "$value": "{alpha.black.40}"
         },
         "colorOnEmphasis": {
           "$type": "color",
@@ -1544,7 +1558,7 @@
       "2xl": {
         "color": {
           "$type": "color",
-          "$value": "{alpha.black.60}"
+          "$value": "{alpha.black.40}"
         },
         "colorOnEmphasis": {
           "$type": "color",
@@ -1566,6 +1580,36 @@
           "$type": "number",
           "$value": 4
         }
+      }
+    },
+    "outline": {
+      "default": {
+        "$type": "color",
+        "$value": "{gray.85}"
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{blue.80}"
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{green.80}"
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{orange.80}"
+      },
+      "danger": {
+        "$type": "color",
+        "$value": "{red.80}"
+      },
+      "accent": {
+        "$type": "color",
+        "$value": "{blue.80}"
+      },
+      "width": {
+        "$type": "number",
+        "$value": 4
       }
     }
   },
