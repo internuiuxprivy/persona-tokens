@@ -1,5 +1,5 @@
 {
-  "Colors/Mode 1": {
+  "Palettes/Mode 1": {
     "base": {
       "white": {
         "$type": "color",
@@ -808,7 +808,7 @@
   "$themes": [],
   "$metadata": {
     "tokenSetOrder": [
-      "Colors/Mode 1"
+      "Palettes/Mode 1"
     ]
   }
 }
